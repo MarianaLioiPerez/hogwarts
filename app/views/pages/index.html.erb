@@ -1,0 +1,23 @@
+
+<img src="/assets/1366_2000.jpg" class="img-fluid w-100" alt="...">
+
+<div class= "tabla-personajes container">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Location</th>
+      <th scope="col">House</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @registros.each do |registro| %>
+    <tr>
+      <td><%= registro.name %></td>
+      <td><%= registro.location %></td>
+      <td><%= registro.house %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
